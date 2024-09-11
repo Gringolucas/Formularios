@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formulario, datos, envio"
+    <title>Formulario</title>
+</head>
+<body>
+        <!-- Separamos e indexamos-->
+        <section>
+        <!-- Usamos los elementos fieldset y legend-->
+            <form action="/practica.html" method="post"></form>
+                <fieldset>
+                    <legend>Información Personal</legend>
+                        <label for="name">Nombre: </label><input type="text" id="name" placeholder="Nombre" pattern="{A-Za-z}+" required><br>
+                        <br>
+                        <label for="surname">Apellido: </label><input type="text" id="surname" placeholder="Apellido" required><br>
+                        <br>
+                        <label for="fecha">Fecha de Nacimiento: </label><input type="date" required><br>
+                        <br>
+                        <label for="sexo">Género: </label><input type="radio" id="opcion1" name="masculino" value="opcion1">Masculino<input type="radio" id="opcion2" name="femenino" value="opcion2">Femenino<input type="radio" id="opcion3" name="otro" value="opcion3">Otro<br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Información del contacto </legend>
+                        <label for="email">Direccion de correo electronico: </label><input type="email" id="email" placeholder="correo electronico" required><br>
+                        <br>
+                        <label for="phone">Número de teléfono:</label><input type="tel" id="phone" placeholder="teléfono" required><br>
+                        <br>
+                        <label for="address">Dirección:</label><input type="text" id="address" placeholder="Dirección" required>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Información de Cuenta</legend><br>
+                        <label for="username">Nombre de Usuario: </label><input type="text" id="username" placeholder="Usuario" required><br>
+                        <br>
+                        <label for="password">Contraseña: </label><input type="password" id="password" placeholder="contraseña" required><br>
+                        <br>
+                        <label for="password">Confirmación de contraseña: </label><input type="password" id="password" placeholder="confirmacion de contraseña" required><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Preferencias</legend>
+                        <label for="color">Seleccione un color: </label><input type="color" id="color"><br>
+                        <br>
+                        <label for="seleccion">Acepte terminos y condiciones</label><input type="checkbox" id="seleccion" value="aceptar">
+                </fieldset>
+                <br>
+            </form>
+        </section>
+        <button>Enviar Formulario</button>
+    </>
+</body>
+</html>
